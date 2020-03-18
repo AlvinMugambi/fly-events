@@ -75,13 +75,18 @@ function EventForm(props) {
           <div className="form-row">
             <FormGroup className="col-md-6">
               <label htmlFor="inputCity">City</label>
-              <Input id="inputCity" type="text"></Input>
+              <Input
+                id="inputCity"
+                type="text"
+                placeholder="e.g. Nairobi"
+              ></Input>
             </FormGroup>
             <FormGroup className="col-md-2">
               <label htmlFor="inputDate">Date</label>
               <Input
                 id="inputDate"
                 type="text"
+                placeholder="YYYY-MM-DD format"
                 onChange={e => setDate(e.target.value)}
               ></Input>
             </FormGroup>
@@ -90,6 +95,7 @@ function EventForm(props) {
               <Input
                 id="inputStartTime"
                 type="text"
+                placeholder="e.g. 4pm"
                 onChange={e => setStartTime(e.target.value)}
               ></Input>
             </FormGroup>
@@ -98,6 +104,7 @@ function EventForm(props) {
               <Input
                 id="inputEndTime"
                 type="text"
+                placeholder="e.g. 10pm"
                 onChange={e => setEndTime(e.target.value)}
               ></Input>
             </FormGroup>
