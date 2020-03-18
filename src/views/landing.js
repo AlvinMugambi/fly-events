@@ -2,7 +2,9 @@ import React from "react";
 import Header from "../components/header";
 import Calendar from "../components/calendar";
 import DropdownFixedNavbar from "../components/navbar";
+import Footer from "../components/Footer";
 import Cards from "../components/card";
+
 const party = require("../assets/img/party.jpg");
 const live = require("../assets/img/pic2.jpg");
 const table = require("../assets/img/pic4.jpg");
@@ -167,6 +169,7 @@ export default class LandingPage extends React.Component {
         <Header createEvent={this.createEvent} />
         <Calendar action={this.handleDateClick} events={events} />
         <Cards events={sortedEvents} />
+        <Footer />
       </>
     );
   }

@@ -20,7 +20,8 @@ import {
   CarouselItem,
   CarouselIndicators
 } from "reactstrap";
-import BlogPost from "../components/comments";
+import Comments from "../components/comments";
+import Footer from "../components/Footer";
 import DropdownFixedNavbar from "../components/navbar";
 
 // core components
@@ -326,10 +327,11 @@ function ProductPage(props) {
                 </Row>
               </Col>
             </Row>
-            <BlogPost />
+            <Comments />
           </Container>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

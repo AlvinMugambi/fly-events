@@ -13,12 +13,7 @@ import {
   UncontrolledTooltip
 } from "reactstrap";
 
-// core components
-// import FixedTransparentNavbar from "components/Navbars/FixedTransparentNavbar.js";
-// import BlogPostHeader from "components/Headers/BlogPostHeader.js";
-// import FooterBlack from "components/Footers/FooterBlack.js";
-
-function BlogPost() {
+function Comments() {
   React.useEffect(() => {
     document.body.classList.add("blog-post");
     document.body.classList.add("sidebar-collapse");
@@ -253,4 +248,4 @@ function BlogPost() {
   );
 }
 
-export default BlogPost;
+export default Comments;
